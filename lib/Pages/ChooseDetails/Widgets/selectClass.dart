@@ -30,17 +30,17 @@ class SelectClass extends StatelessWidget {
                 handleChange: onRadio1Change,
               ),
               Text('CSB'),
-              CustomRadio(
-                value: 2,
-                groupValue: radioValue,
-                handleChange: onRadio1Change,
-              ),
-              Text('EEE'),
+
             ],
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: <Widget>[ CustomRadio(
+              value: 2,
+              groupValue: radioValue,
+              handleChange: onRadio1Change,
+            ),
+              Text('EEE'),
               CustomRadio(
                 value: 3,
                 groupValue: radioValue,
@@ -53,14 +53,21 @@ class SelectClass extends StatelessWidget {
                 handleChange: onRadio1Change,
               ),
               Text('ECB'),
-              CustomRadio(
-                value: 5,
-                groupValue: radioValue,
-                handleChange: onRadio1Change,
-              ),
-              Text('EB'),
+
+
             ],
           ),
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[ CustomRadio(
+              value: 5,
+              groupValue: radioValue,
+              handleChange: onRadio1Change,
+            ),
+              Text('EB'),CustomRadio(
+            value: 6,
+            groupValue: radioValue,
+            handleChange: onRadio1Change,
+          ),Text('MECH'),],),
         ],
       ),
     );
